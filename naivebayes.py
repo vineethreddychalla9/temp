@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn import metrics
-msg = pd.read_csv('NaiveText.csv',names=['message','label'])
+msg=pd.read_csv('https://raw.githubusercontent.com/KMITDS/CS601PC/main/naivetext.csv',names=['message','label']) 
 print("The dimensaions : ",msg.shape)
 msg['labelnum'] = msg.label.map({'pos':1,'neg':0})
 x = msg.message
